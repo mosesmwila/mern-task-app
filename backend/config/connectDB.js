@@ -10,5 +10,18 @@ const connectDB = async () => {
     }
 };
 
-
 module.exports = connectDB
+
+// use this function in server to connect to mongoDB and start the server
+
+// const startServer = async () => {
+//     try {
+//         await connectDB();
+//         app.listen(PORT, () => {
+//             console.log(`Server running on port ${PORT}`);
+//         });
+//     } catch (error) {
+//         console.log(error)
+//     }
+// };
+// startServer();
