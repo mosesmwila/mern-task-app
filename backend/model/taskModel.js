@@ -1,10 +1,10 @@
-const mongoose = require("moogose")
+const mongoose = require("mongoose");
 
 const taskSchema = mongoose.Schema(
     {
         name:{
             type:String,
-            required: [true, "Please add a task."]
+            required: [true, "Please add a task"]
         },
         completed:{
             type: Boolean,
@@ -17,6 +17,6 @@ const taskSchema = mongoose.Schema(
     }
 )
 
-const Task = moongose.model("Task", taskSchema)
+const Task = mongoose.model("Task", taskSchema)
 
 module.exports = Task;
