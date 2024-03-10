@@ -1,5 +1,5 @@
 const express = require("express");
-const Task = require("../model/taskModel");
+const Task = require("../models/taskModel");
 const router = express.Router();
 const {createTask, getTasks} = require("../controllers/taskController");
 
